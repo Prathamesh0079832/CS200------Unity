@@ -29,7 +29,20 @@
     
     all about frequently used GIT commands. 
      What new fact will you learn?
-</p>   
+</p>
+<br><br>
+<p>Please enter your name and click on start to start the Quiz. </p>
+
+
+<form action="{{url_for('intro_page')}}" method="POST">
+    <div style="text-align:left;">
+        <label for="name" style="color: black; font-size: 1.2em ;"><b>Name:</b></label>
+        <input type="text" id="name" name="Name">
+        <button type="submit">Start </button><br>
+    </div>
+</form>
+
+    
 
 
 </body>
