@@ -9,30 +9,31 @@
     <style>
         body {
                 text-align: "center";
-                background-image: url("static/home_bg.jpg");
+                background-image: url('static/home_bg.jpg');
                 background-repeat: no-repeat;
-                background-size: 2005px 905px;
+                background-size: 1550px 750px;
             }
         h1 {
-                text-align: center;
-                color: rgb(98, 0, 255);
+                text-align: left;
+                color: rgb(255, 196, 0);
                 font-size: 4em;
             }
             p {
                 text-align:left;
                 font-size: 1.5em;
-                color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
             }
     </style>
 </head>
 <body>
     <h1>The Ultimate Quiz</h1>
+    <br><br><br><br><br>
 <p>
-    It's time to find out all about GIT!
+    It's time to find out all about GIT! <br>
     
     We've put together this awesome  Quiz page <br>
     
-    all about frequently used GIT commands. 
+    all about frequently used GIT commands. <br>
      What new fact will you learn?
 </p>
 <br><br>
@@ -41,7 +42,7 @@
 
 <form action="{{url_for('intro_page')}}" method="POST">
     <div style="text-align:left;">
-        <label for="name" style="color: black; font-size: 1.2em ;"><b>Name:</b></label>
+        <label for="name" style="color: rgb(255, 255, 255); font-size: 1.1em ;"><b>Name:</b></label>
         <input type="text" id="name" name="Name">
         <button type="submit">Start </button><br>
     </div>
