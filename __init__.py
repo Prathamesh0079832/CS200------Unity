@@ -21,6 +21,24 @@ def final_page():
     score = 0
     if request.form["q1"] == 'q1o4':
         score+=1
+    if request.fotm["q2"] == 'q2o2':
+        score+=1
+    if request.form["q3"] == 'q3o1':
+        score+=1
+    if request.form["q4"] == 'q4o3':
+        score+=1
+    if request.form["q5"] == 'q5o3':
+        score+=1
+    if request.form["q6"] == 'q6o2':
+        score+=1
+    if request.form["q7"] == 'q7o1':
+        score+=1
+    if request.form["q8"] == 'q8o2':
+        score+=1
+    if request.form["q9"] == 'q9o1':
+        score+=1
+    if request.form["q10"] == 'q10o3':
+        score+=1
     return render_template('final_page.html', finalscore = score)
 
 if __name__ == "__main__":
