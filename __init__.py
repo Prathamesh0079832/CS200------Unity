@@ -21,7 +21,7 @@ def final_page():
     score = 0
     if request.form["q1"] == 'q1o4':
         score+=1
-    if request.fotm["q2"] == 'q2o2':
+    if request.form["q2"] == 'q2o2':
         score+=1
     if request.form["q3"] == 'q3o1':
         score+=1
