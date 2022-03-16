@@ -15,7 +15,31 @@
     <h2>Let's begin the quiz!!</h2>
     <br><br>
 
+    
+    <form action="{{url_for('final_page')}}" method="POST">
+        <div style="text-align: left; font-size: 1.3em; color: rgb(0, 0, 0);">
+            
+            <label for="q1"><b> The main objectives of Git are &#128161</b></label><br>
+            <br>
 
+            <input type="radio" id="q1o1" name="q1" value="q1o1">
+            <label for="q1o1">Speed</label><br>
+
+            <input type="radio" id="q1o2" name="q1" value="q1o2">
+            <label for="q1o2">Data Integrity</label><br>
+
+            <input type="radio" id="q1o3" name="q1" value="q1o3">
+            <label for="q1o3">support for distributed non-linear workflows</label><br>
+
+            <input type="radio" id="q1o4" name="q1" value="q1o4">
+            <label for="q1o4"> All of the above</label><br>
+
+            <br>
+
+
+            <button style="height: 20px; font-size: 15px;" type="submit">Submit</button>
+        </div>
+    </form>
 
 
 </body>
