@@ -56,6 +56,24 @@ def final_page_sports():
     sscore = 0
     if request.form["q1s"] == 'q1so3':
         sscore+=1
+    if request.form["q2s"] == 'q2so3':
+        sscore+=1
+    if request.form["q3s"] == 'q3so3':
+        sscore+=1
+    if request.form["q4s"] == 'q4so1':
+        sscore+=1
+    if request.form["q5s"] == 'q5so1':
+        sscore+=1
+    if request.form["q6s"] == 'q6so2':
+        sscore+=1
+    if request.form["q7s"] == 'q7so4':
+        sscore+=1
+    if request.form["q8s"] == 'q8so4':
+        sscore+=1
+    if request.form["q9s"] == 'q9so1':
+        sscore+=1
+    if request.form["q10s"] == 'q10so2':
+        sscore+=1
     return render_template('final_page.html', finalscore = sscore)
 
 
