@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-image: url('static/quiz_page_bg.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: rgb(255, 255, 255);       
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Quiz {{username}}</h1>
+    <h2>Let's begin the quiz!!</h2>
+    <br><br>
+
+
+    <form action="{{url_for('final_page')}}" method="POST">
+
+        <div style="text-align: left; font-size: 1.3em; color: rgb(255, 255, 255);">
+                <label for="q1"><b> How frequently is FIFA World Cup is held?</b></label><br>
+                <br>
+
+                <input type="radio" id="q1o1" name="q1" value="q1o1">
+                <label for="q1o1">Every 2 Years</label><br>
+
+                <input type="radio" id="q1o2" name="q1" value="q1o2">
+                <label for="q1o2">Every 3 Years</label><br>
+
+                <input type="radio" id="q1o3" name="q1" value="q1o3">
+                <label for="q1o3">Every 4 Years</label><br>
+
+                <input type="radio" id="q1o4" name="q1" value="q1o4">
+                <label for="q1o4">Every Year</label><br>
+
+    
+        </div>
+        <br>
+    </form>
+ 
+    
+</body>
+</html>
