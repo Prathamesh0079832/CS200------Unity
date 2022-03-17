@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Quiz</title>
+    <style>
+        body
+        {
+            background-image: url('/static/quizbg.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1,h2{
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the Quiz {{username}}</h1>
+    <h2>Let's begin the quiz on GIT!!</h2>
+    <br><br>
+
+
+    <form action="{{url_for('final_page_git')}}" method="POST">
+
+        <div style="text-align: left; font-size: 1.3em; color: rgb(255,255,255);">
+                <label for="q1g"><b> The main objectives of Git are &#128161</b></label><br>
+                <br>
+
+                <input type="radio" id="q1go1" name="q1g" value="q1go1">
+                <label for="q1go1">Speed</label><br>
+
+                <input type="radio" id="q1go2" name="q1g" value="q1go2">
+                <label for="q1go2">Data Integrity</label><br>
+
+                <input type="radio" id="q1go3" name="q1g" value="q1go3">
+                <label for="q1go3">support for distributed non-linear workflows</label><br>
+
+                <input type="radio" id="q1go4" name="q1g" value="q1go4">
+                <label for="q1go4"> All of the above</label><br>
+
+        </div>
+        <br>
+
+
+        <div style="text-align:left; font-size: 1.3em; color: rgb(255,255,255);">
+                <label for="q2g"><b>Which Command is used to show limited number of commits &#128161</b></label><br>
+                <br>
+
+                <input type="radio" id="q2go1" name="q2g" value="q2go1">
+                <label for="q2go1">git fetch</label><br>
+
+                <input type="radio" id="q2go2" name="q2g" value="q2go2">
+                <label for="q2go2">git log -n</label><br>
+
+                <input type="radio" id="q2go3" name="q2g" value="q2go3">
+                <label for="q2go3">git config</label><br>
+
+                <input type="radio" id="q2go4" name="q2g" value="q2go4">
+                <label for="q2go4">git status</label><br>
+
+        </div>
+        <br>
+
+        <div style="text-align: left; font-size: 1.3em; color: rgb(255,255,255);">
+                <label for="q3g"><b> ____ command is useful for getting a high-level overview of the project
+                        history &#128161</b></label><br>
+                <br>
+
+                <input type="radio" id="q3go1" name="q3g" value="q3go1">
+                <label for="q3go1">git log --oneline</label><br>
+
+                <input type="radio" id="q3go2" name="q3g" value="q3go2">
+                <label for="q3go2">git reset --hard</label><br>
+
+                <input type="radio" id="q3go3" name="q3g" value="q3go3">
+                <label for="q3go3">git log --author=""</label><br>
+
+                <input type="radio" id="q3go4" name="q3g" value="q3go4">
+                <label for="q3go4">git rebase</label><br>
+
+        </div>
+        <br>
+
+        <div style="text-align: left; font-size: 1.3em; color: rgb(255,255,255);">
+                <label for="q4g"><b> _______ removes untracked files from your working directory
+                        &#128161</b></label><br>
+                <br>
+
+                <input type="radio" id="q4go1" name="q4g" value="q4go1">
+                <label for="q4go1">git commit</label><br>
+
+                <input type="radio" id="q4go2" name="q4g" value="q4go2">
+                <label for="q4go2">git clean -f</label><br>
+
+                <input type="radio" id="q4go3" name="q4g" value="q4go3">
+                <label for="q4go3">git clean</label><br>
+
+                <input type="radio" id="q4go4" name="q4g" value="q4go4">
+                <label for="q4go4">git reset</label><br>
+
+        </div>
+        <br>
+
+        <div style="text-align: left; font-size: 1.3em; color: rgb(255,255,255);">
+                <label for="q5g"><b>Command to download all the objects and references from a specified repository &#128161</b></label><br>
+                <br>
+
+                <input type="radio" id="q5go1" name="q5g" value="q5go1">
+                <label for="q5go1">git config --list</label><br>
+
+                <input type="radio" id="q5go2" name="q5g" value="q5go2">
+                <label for="q5go2">git help</label><br>
+
+                <input type="radio" id="q5go3" name="q5g" value="q5go3">
+                <label for="q5go3">git fetch</label><br>
+
+                <input type="radio" id="q5go4" name="q5g" value="q5go4">
+                <label for="q5go4">git log -n</label><br>
+
+        </div>
+        <br>
+
+        <div style="text-align: left; font-size: 1.3em; color: rgb(255,255,255);">
+
+                <label for="q6g"><b> _____ command renames the current branch to &#128161</b></label><br>
+                <br>
+
+                <input type="radio" id="q6go1" name="q6g" value="q6go1">
+                <label for="q6go1">git remote rm</label><br>
+
+                <input type="radio" id="q6go2" name="q6g" value="q6go2">
+                <label for="q6go2">git branch -m</label><br>
+
+                <input type="radio" id="q6go3" name="q6g" value="q6go3">
+                <label for="q6go3">git branch -D (CAPS)</label><br>
+
+                <input type="radio" id="q6go4" name="q6g" value="q6go4">
+                <label for="q6go4">git rebase</label><br>
+
+        </div>
+        <br>
+
+        <div style="text-align: left; font-size: 1.3em; color: rgb(255,255,255);">
+                <label for="q7g"><b>In Git, if you want to make your local repository reflect changes that have been made
+                        in a remote (tracked) repository, you should run the pull command &#128161</b></label><br>
+                <br>
+
+                <input type="radio" id="q7go1" name="q7g" value="q7go1">
+                <label for="q7go1">True</label><br>
+
+                <input type="radio" id="q7go2" name="q7g" value="q7go2">
+                <label for="q7go2">False</label><br>
+
+        </div>
+        <br>
+
+
+        <div style="text-align: left; font-size: 1.3em; color: rgb(255,255,255);">
+                <label for="q8g"><b>Which of these Git client commands creates a copy of the repository and a working
+                        directory in the client’s workspace. &#128161</b></label><br>
+                <br>
+
+                <input type="radio" id="q8go1" name="q8g" value="q8go1">
+                <label for="q8go1">checkout</label><br>
+
+                <input type="radio" id="q8go2" name="q8g" value="q8go2">
+                <label for="q8go2">clone</label><br>
+
+                <input type="radio" id="q8go3" name="q8g" value="q8go3">
+                <label for="q8go3">import</label><br>
+
+                <input type="radio" id="q8go4" name="q8g" value="q8go4">
+                <label for="q8go4">update</label><br>
+
+
+        </div>
+        <br>
+
+
+
+        <div style="text-align: left; font-size: 1.3em; color: rgb(255,255,255);">
+                <label for="q9g"><b>Git is a .................... Version Control tool &#128161</b></label><br>
+                <br>
+
+                <input type="radio" id="q9go1" name="q9g" value="q9go1">
+                <label for="q9go1">Decentralized</label><br>
+
+                <input type="radio" id="q9go2" name="q9g" value="q9go2">
+                <label for="q9go2">Centralized</label><br>
+
+        </div>
+        <br>
+
+        <div style="text-align: left; font-size: 1.3em; color: rgb(255,255,255);">
+                <label for="q10g"><b>Git command .................... used to give tags to the specified commit. &#128161</b></label><br>
+                <br>
+
+                <input type="radio" id="q10go1" name="q10g" value="q10go1">
+                <label for="q10go1"> git checkout [branch name]</label><br>
+
+                <input type="radio" id="q10go2" name="q10g" value="q10go2">
+                <label for="q10go2"> git show [commit]</label><br>
+
+                <input type="radio" id="q10go3" name="q10g" value="q10go3">
+                <label for="q10go3"> git tag [commitID]</label><br>
+
+                <input type="radio" id="q10go4" name="q10g" value="q10go4">
+                <label for="q10go4"> git rm [file]</label><br>
+
+
+
+        </div>
+        <br>
+
+        <button style="height: 20px; font-size: 15px;" type="submit">Submit</button>
+    </form>
+
+
+</body>
+
+</html>
