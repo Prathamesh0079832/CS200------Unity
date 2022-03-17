@@ -7,6 +7,10 @@
                 background-image: url('/static/wall.jpeg');
                 background-repeat: no-repeat;
                 background-size: cover;
+    }
+    h1,h2{
+        color: rgb(255, 255, 255);
+    }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +18,12 @@
     <title>The Ultimate Quiz</title>
 </head>
 <body>
-<h1><h1>
+    <br>
+<h1>Welcome {{username}} <h1>
+<h2>Choose which quiz you would like to take </h2>
+<p>
     <form action="{{url_for('question_page')}}" method="POST"> 
-        <label for="quiz_type" style= "color": rgb(255, 255, 255); font-size: 1.1 em ; ></label>
+        <label for="quiz_type" style= "color: rgb(255, 255, 255); font-size: 1.1 em ;" ></label>
         <center>
             
                 <input type="radio" name="quiz_type" id="for_git" value="for_git">
@@ -28,8 +35,11 @@
  </label>
  
  <br><br><br><br>
-        <button style="height: 50px; font-size: 30px; box-shadow: 2px 2px black;" type="submit">Start Qizz</button></center>
+        <button style="height: 50px; font-size: 30px; box-shadow: 2px 2px black;" type="submit">Start Quiz</button></center>
     </form>
+
+</p>
+ 
 
 
 
