@@ -6,7 +6,7 @@ app = Flask(__name__)
 def home_page():
     return render_template('home.html')
 
-@app.route('/quiz-topic', methods=["POST"})
+@app.route('/quiz-topic', methods=["POST"])
 def quiz_topic():
     global name
     if request.form["Name"] == '':
