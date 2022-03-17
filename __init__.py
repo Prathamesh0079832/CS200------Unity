@@ -56,6 +56,7 @@ def final_page_sports():
     sscore = 0
     if request.form["q1s"] == 'q1so3':
         gscore+=1
+    return render_template('final_page.html', finalscore = sscore)
 
 
 if __name__ == "__main__":
