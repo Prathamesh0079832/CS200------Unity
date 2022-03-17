@@ -8,13 +8,14 @@
     <style>
         body
         {
-            background-image: url('static/quiz_page_bg.webp');
+            background-image: url('/static/quizbg.jpeg');
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
-            color: rgb(255, 255, 255);       
         }
-
+        h1,h2{
+            color: rgb(255, 255, 255);
+        }
 
     </style>
 </head>
@@ -28,24 +29,25 @@
     <form action="{{url_for('final_page_sports')}}" method="POST">
 
         <div style="text-align: left; font-size: 1.3em; color: rgb(255, 255, 255);">
-                <label for="q1"><b> How frequently is FIFA World Cup is held?</b></label><br>
+                <label for="q1s"><b> How frequently is FIFA World Cup is held?</b></label><br>
                 <br>
 
-                <input type="radio" id="q1o1" name="q1" value="q1o1">
-                <label for="q1o1">Every 2 Years</label><br>
+                <input type="radio" id="q1so1" name="q1s" value="q1so1">
+                <label for="q1so1">Every 2 Years</label><br>
 
-                <input type="radio" id="q1o2" name="q1" value="q1o2">
-                <label for="q1o2">Every 3 Years</label><br>
+                <input type="radio" id="q1so2" name="q1s" value="q1so2">
+                <label for="q1so2">Every 3 Years</label><br>
 
-                <input type="radio" id="q1o3" name="q1" value="q1o3">
-                <label for="q1o3">Every 4 Years</label><br>
+                <input type="radio" id="q1so3" name="q1s" value="q1so3">
+                <label for="q1so3">Every 4 Years</label><br>
 
-                <input type="radio" id="q1o4" name="q1" value="q1o4">
-                <label for="q1o4">Every Year</label><br>
+                <input type="radio" id="q1so4" name="q1s" value="q1so4">
+                <label for="q1so4">Every Year</label><br>
 
-    
+                <button style="height: 20px; font-size: 15px;" type="submit">Submit</button>
         </div>
         <br>
+        
     </form>
  
     

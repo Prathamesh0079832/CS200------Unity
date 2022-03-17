@@ -6,7 +6,7 @@ app = Flask(__name__)
 def home_page():
     return render_template('home.html')
 
-@app.route('/quiz-topic', methods=["POST"])
+@app.route('/quiz-topic', methods=["GET","POST"])
 def quiz_topic():
     global name
     if request.form["Name"] == '':
@@ -15,7 +15,7 @@ def quiz_topic():
         name = request.form["Name"]
     return render_template('quiz_type.html', username = name)
 
-@app.route('/quiz-topic/quiz', methods=["POST"])
+@app.route('/quiz-topic/quiz', methods=["GET","POST"])
 def question_page():
     if request.form["quiz_type"] == 'for_git':
         return render_template('quiz_page_git.html', username = name)
@@ -24,7 +24,7 @@ def question_page():
     else:
         pass
 
-@app.route('/quiz-topic/quiz/git-quiz-results', methods=["POST"])
+@app.route('/quiz-topic/quiz/git-quiz-results', methods=["GET","POST"])
 def final_page_git():
     global gscore
     gscore = 0
@@ -50,12 +50,12 @@ def final_page_git():
         gscore+=1
     return render_template('final_page.html', finalscore = gscore)
 
-@app.route('quiz-topic/quiz/sports-quiz-results', mathods=["POST"])
+@app.route('/quiz-topic/quiz/sports-quiz-results', methods=["GET","POST"])
 def final_page_sports():
     global sscore
     sscore = 0
     if request.form["q1s"] == 'q1so3':
-        gscore+=1
+        sscore+=1
     return render_template('final_page.html', finalscore = sscore)
 
 
